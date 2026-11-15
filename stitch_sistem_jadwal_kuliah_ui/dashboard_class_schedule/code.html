@@ -1,0 +1,461 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#494683","tertiary-fixed-dim":"#ffb77d","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#351ad4","on-primary":"#ffffff","surface-container-lowest":"#ffffff","background":"#faf8ff","tertiary-fixed":"#ffdcc3","surface-tint":"#4f3feb","on-secondary-fixed":"#16114f","on-primary-fixed":"#110068","surface-container-highest":"#dae2fd","outline-variant":"#c7c4d8","error-container":"#ffdad6","surface":"#faf8ff","surface-bright":"#faf8ff","on-primary-container":"#eae6ff","on-tertiary-fixed":"#2f1500","surface-container-low":"#f2f3ff","on-error-container":"#93000a","on-error":"#ffffff","on-tertiary-fixed-variant":"#6e3900","surface-variant":"#dae2fd","primary-fixed-dim":"#c4c0ff","secondary-fixed-dim":"#c4c0ff","surface-container":"#eaedff","primary-container":"#5a4cf5","primary":"#402cdd","primary-fixed":"#e3dfff","secondary":"#5b5796","inverse-primary":"#c4c0ff","on-secondary":"#ffffff","tertiary-container":"#9f5500","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-tertiary":"#ffffff","outline":"#777587","inverse-surface":"#283044","error":"#ba1a1a","on-surface":"#131b2e","on-tertiary-container":"#ffe3d0","on-surface-variant":"#464556","on-secondary-fixed-variant":"#433f7c","tertiary":"#7c4100","secondary-container":"#bbb7fd","inverse-on-surface":"#eef0ff","secondary-fixed":"#e3dfff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.25rem","space-xl":"2rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-[260px] bg-[#232252] z-50 flex flex-col justify-between border-r border-[#1e1b4b]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-[#2d2a66]"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">calendar_clock</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-white tracking-tight">Class Schedule</span><span class="font-label-sm text-label-sm text-surface-variant/70 tracking-wider uppercase">Akademik v2.4</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm text-surface-variant/60 uppercase tracking-wider">Menu Utama</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary text-white font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-colors bg-primary text-white font-semibold rounded-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-surface-variant/80 hover:bg-[#2d2a66] hover:text-white transition-colors" data-path="jadwal-kuliah" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Jadwal Kuliah</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-surface-variant/80 hover:bg-[#2d2a66] hover:text-white transition-colors" data-path="daftar-kelas" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span>Daftar Kelas</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-surface-variant/80 hover:bg-[#2d2a66] hover:text-white transition-colors" data-path="dosen" href="#"><span class="material-symbols-outlined text-[20px]">supervisor_account</span><span>Dosen</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-surface-variant/80 hover:bg-[#2d2a66] hover:text-white transition-colors" data-path="ruangan" href="#"><span class="material-symbols-outlined text-[20px]">meeting_room</span><span>Ruangan</span></a></nav></div></div><div class="p-space-md border-t border-[#2d2a66]"><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm text-surface-variant/60 uppercase tracking-wider">Sistem</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary text-white font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-surface-variant/80 hover:bg-[#2d2a66] hover:text-white transition-colors" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-red-300 hover:bg-error/20 hover:text-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Keluar</span></a></nav></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest z-40 border-b border-surface-container-highest flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md w-full max-w-md"><div class="flex items-center w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-3 py-1.5 focus-within:border-primary transition-colors"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Cari mata kuliah, kode dosen, atau ruangan..." type="search"></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center bg-surface-container-high px-space-sm py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span><span>Semester Ganjil 2024/2025</span></div><button class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface border border-outline-variant/40 relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="h-8 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden md:block"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Admin Akademik</span><span class="font-label-sm text-label-sm text-outline">Biro Administrasi</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1560px] mx-auto w-full space-y-space-lg">
+<!-- Top Bar: Greeting & Quick Action Filter -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Selamat Datang<span style="letter-spacing: -0.025em;">!</span></h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">Aktif</span>
+</div>
+<p class="font-body-md text-body-md text-outline">Rabu, 11 Juni 2025 • Semester Ganjil 2024/2025 • Fakultas Teknologi Informasi</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+<span>Ekspor Jadwal</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Tambah Jadwal</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Progress Metrics Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex items-center justify-between">
+<div class="flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Okupansi Ruang</span>
+<div class="mt-1 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface">14</span>
+<span class="font-body-sm text-body-sm text-outline">/ 18 Ruang</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-emerald-600 font-medium mt-3">Pemanfaatan optimal</span>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewBox="0 0 64 64">
+<circle class="text-surface-container-high" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-width="5"></circle>
+<circle class="text-primary-container" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-dasharray="163.36" stroke-dashoffset="35.94" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="absolute font-label-md text-label-md text-on-surface">78%</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex items-center justify-between">
+<div class="flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Jadwal Terverifikasi</span>
+<div class="mt-1 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface">42</span>
+<span class="font-body-sm text-body-sm text-outline">/ 48 Sesi</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-3">Siap perkuliahan</span>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewBox="0 0 64 64">
+<circle class="text-surface-container-high" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-width="5"></circle>
+<circle class="text-primary" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-dasharray="163.36" stroke-dashoffset="20" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="absolute font-label-md text-label-md text-on-surface">88%</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex items-center justify-between">
+<div class="flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Bebas Bentrok</span>
+<div class="mt-1 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface">100%</span>
+<span class="font-body-sm text-body-sm text-outline">Aman</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-emerald-600 font-medium mt-3">Semua teratasi</span>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewBox="0 0 64 64">
+<circle class="text-surface-container-high" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-width="5"></circle>
+<circle class="text-emerald-500" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-dasharray="163.36" stroke-dashoffset="0" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="material-symbols-outlined absolute text-[20px] text-emerald-600">verified</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex items-center justify-between">
+<div class="flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Kelas Aktif Hari Ini</span>
+<div class="mt-1 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface">6</span>
+<span class="font-body-sm text-body-sm text-outline">/ 8 Berjalan</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-3">2 sesi tersisa</span>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewBox="0 0 64 64">
+<circle class="text-surface-container-high" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-width="5"></circle>
+<circle class="text-secondary" cx="32" cy="32" fill="none" r="26" stroke="currentColor" stroke-dasharray="163.36" stroke-dashoffset="40.84" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="absolute font-label-md text-label-md text-on-surface">75%</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Middle Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left 8 Cols: Schedule Section with Interactive Mini Calendar & Slots -->
+<div class="lg:col-span-8 flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Jadwal Perkuliahan</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Rabu, 11 Jun</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+            Lihat Matriks Lengkap
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Main schedule container with calendar on left and class tiles on right -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md grid grid-cols-1 md:grid-cols-12 gap-space-lg">
+<!-- Calendar Panel (5 cols) -->
+<div class="md:col-span-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Juni 2025</span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Days Header -->
+<div class="grid grid-cols-7 text-center mb-2">
+<span class="font-label-sm text-label-sm text-outline py-1">Min</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Sen</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Sel</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Rab</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Kam</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Jum</span>
+<span class="font-label-sm text-label-sm text-outline py-1">Sab</span>
+</div>
+<!-- Month Grid -->
+<div class="grid grid-cols-7 gap-y-1 text-center font-label-md text-label-md">
+<!-- Row 1 -->
+<span class="py-1.5 text-outline-variant">25</span>
+<span class="py-1.5 text-outline-variant">26</span>
+<span class="py-1.5 text-outline-variant">27</span>
+<span class="py-1.5 text-outline-variant">28</span>
+<span class="py-1.5 text-outline-variant">29</span>
+<span class="py-1.5 text-outline-variant">30</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">1</span>
+<!-- Row 2 -->
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">2</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">3</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">4</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">5</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">6</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">7</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">8</span>
+<!-- Row 3 -->
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">9</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">10</span>
+<!-- Today Selected Active Date -->
+<span class="py-1.5 bg-primary-container text-on-primary font-bold rounded-lg cursor-pointer flex items-center justify-center">11</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">12</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">13</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">14</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">15</span>
+<!-- Row 4 -->
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">16</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">17</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">18</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">19</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">20</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">21</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">22</span>
+<!-- Row 5 -->
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">23</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">24</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">25</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">26</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">27</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">28</span>
+<span class="py-1.5 text-on-surface hover:bg-surface-container rounded-lg cursor-pointer transition-colors">29</span>
+</div>
+</div>
+<!-- Mini stats footer in calendar -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">3 Sesi Sedang Berjalan</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">TI &amp; SI</span>
+</div>
+</div>
+<!-- Schedule Slots list (7 cols) -->
+<div class="md:col-span-7 flex flex-col justify-between space-y-3">
+<!-- Slot 1: Active / Ongoing (Full saturated purple banner like image reference) -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md flex items-center justify-between transition-transform">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-white/20 rounded-lg">
+<span class="font-headline-sm text-headline-sm leading-none font-bold">11</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide opacity-80">Jun</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold">Pemrograman Web</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-white/30 text-white uppercase">Sedang Kuliah</span>
+</div>
+<span class="font-body-sm text-body-sm opacity-90 mt-0.5">TI-3A • Ruang GKB-201 • Dr. Sinta Ramadhani</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">08:00</span>
+<span class="font-body-sm text-body-sm opacity-80">09:40 WIB</span>
+</div>
+</div>
+<!-- Slot 2: Normal upcoming class -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-highest rounded-lg text-on-surface">
+<span class="font-headline-sm text-headline-sm leading-none font-bold">11</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Jun</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Basis Data Lanjut</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary uppercase">Mendatang</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">TI-2A • Ruang GKB-105 • Rani Puspita, M.Kom</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">10:00</span>
+<span class="font-body-sm text-body-sm text-outline">11:40 WIB</span>
+</div>
+</div>
+<!-- Slot 3: Normal upcoming class -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex items-center justify-between transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-highest rounded-lg text-on-surface">
+<span class="font-headline-sm text-headline-sm leading-none font-bold">11</span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Jun</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Matematika Diskrit</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary uppercase">Mendatang</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">TI-1A • Ruang GKB-101 • Dr. Lia Anggraini</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">13:00</span>
+<span class="font-body-sm text-body-sm text-outline">14:40 WIB</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4 Cols: Upcoming Events + Teachers Section -->
+<div class="lg:col-span-4 flex flex-col space-y-space-md">
+<!-- Agenda & Sesi Penting (Upcoming Events) -->
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Agenda Akademik</h2>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Semua</a>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md space-y-space-sm">
+<!-- Event 1 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low hover:bg-surface-container rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">meeting_room</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-1">Verifikasi Matriks Ruang GKB</span>
+<span class="font-body-sm text-body-sm text-outline">14:00 - 15:30 • Rapat Biro 2</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<!-- Event 2 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low hover:bg-surface-container rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface line-clamp-1">Sinkronisasi Plotting Dosen TI</span>
+<span class="font-body-sm text-body-sm text-outline">16:00 - 17:00 • Virtual Zoom</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Teachers Section (Dosen Pengajar Hari Ini) -->
+<div class="flex items-center justify-between pt-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dosen Pengajar Hari Ini</h2>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Semua Dosen</a>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md space-y-space-sm">
+<!-- Lecturer 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indonesian female university lecturer wearing formal professional attire with a calm, friendly expression inside an academic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcVNFggmQ-TmAnjiITYT7FsScWwJHYt8KFLYOOD2yWvb2cXsSwtPHJa1yXPpR9-uHtUwrDm_RL3aR-65SZn0fmfG3i34CQMJZIK8ALye2v2CfHdnSV12Hzhf1GRoi3Ai8YIjQ9Q5nBEG1r8zQhbslTUYgo_oPUE4BO4nnEhgO3SHQ96tiGV40WwjjHebd4kTDXiNr7G_SrbcLlV3kz2og8I8H-Q31Oq91t6KC8K-lW">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Dr. Sinta Ramadhani</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Pemrograman Web • GKB-201</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-colors flex-shrink-0 ml-2" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+<!-- Lecturer 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indonesian male computer science professor wearing glasses and a formal batik shirt in front of an academic library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY9UUFQSDPmYlv_5QJ8i1DS0cY0uAy36Jczr4d1luXyUlHsDlKgMwjM_kJVyz9gaFwSmi9UCwkhdTQC0ojd9ZW1KdR1ZJdrirr_br8DiDs6veu_jPCOzD_-9uG2KvWOU_RcFpYtgj2gpdjdMzG4LSfglhQQxJBGbrogW-2uCmVA1_-GdvMu4j2dk8i0zogvqZxyqnr4qVCw1dmhCEFf-GdhhedMQ1zVCMuawOKxMzo">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Hendra Wijaya, M.T.</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Jaringan Komputer • GKB-202</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-colors flex-shrink-0 ml-2" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+<!-- Lecturer 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a young Indonesian female data science instructor wearing a sharp modern blazer with a neutral clean university background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEPWCYGEgx0-JmBT3SQEwG1FZvQ8m94qZ-m2uKnNAdfRvcyf8Rpm-cxFqa6mmaMJJv5N9QKH1HhB5cDue4LEEh1xknWsXTZyxSUm70dU2GE_UNz8C18aADy-9xExc9p4X2-ISQzgEYcHhHUjqBeRDgA8lLbiJmV4QdCHKp8l_J4Bkmovw30lzjGqgCLQiS47eYU4JVFca-3jesC1VIpfX0yqt-TjdMRUnGbO3yWD5M">
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Dr. Lia Anggraini</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Matematika Diskrit • GKB-101</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-colors flex-shrink-0 ml-2" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Bottom Row - Course Distribution Cards (My Classes) -->
+<div class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Distribusi Mata Kuliah Unggulan</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">3 Kelas Prioritas</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Kelola Kurikulum</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Course 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex gap-space-md items-center">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Cyberpunk high-tech computing server hardware visualization with neon purple and deep indigo glow representing operating system infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbzHkuGD4U7zDj8bop9iWirjBvA32Sws67G0UGPjaqVfpsiYqGqV4XbkuMIX7zIda1om1ss1GwPYFtyyYPnbUvlQgkOCn3pBgWSY1p6nWQXB3ECqPwPV8BE_Adxxkr8J3PDOD7oiA5oojxqEGD1TVxNGJB8wOREcXAa0gke_GeydusPDXiFpQ2nSupliIkVyT5xl7V937wiUlZc-E9rMdhBfE3UpbVdjPPBqnCIuou">
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sistem Operasi</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary">3 SKS</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5 truncate">Kelas TI-3A • GKB-201</span>
+<div class="mt-3 space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Capaian Teori</span>
+<span class="text-on-surface font-semibold">75%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-3/4"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-0.5">
+<span class="text-outline">Praktikum Lab</span>
+<span class="text-on-surface font-semibold">50%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-1/2"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex gap-space-md items-center">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Artificial Intelligence neural network glowing node visualization in deep indigo and vibrant violet tones with futuristic digital patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDculbIkesI_xKmYr8xvjVWDMfC5GXiN-ARRlzKn11T_U27FYi5dEVMYPe0iD39MikZaiq5IzxNYG1O0VJ9YsrJVGjfQK3oXubC6dHhkOHRtdt_hNW8uLOfSlfgmm2swLTUEx4d0Yy92oD19-aWMh8v2P4sVczbmNTKy-0RY308cPkvzmOKIaBr4TY0ezhymmY6NdFU2ToF6yEzQEddf_LdKbXFqIwvfgRP8DwsHBG1">
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Kecerdasan Buatan</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary">4 SKS</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5 truncate">Kelas TI-4A • GKB-301</span>
+<div class="mt-3 space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Capaian Teori</span>
+<span class="text-on-surface font-semibold">90%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[90%]"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-0.5">
+<span class="text-outline">Proyek Riset</span>
+<span class="text-on-surface font-semibold">78%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[78%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex gap-space-md items-center">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Robotic automation and software architecture diagram with soft ambient light reflections in indigo and pure white backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSzBFOb0RacVmcrMqkx_QLx7ExvAV5uV1L2fv73UCd9FLBdiaolonNNveZ4enOaX1W3bKXQw00tLGkGNESylI146MgBOupFTvKXuEO4lgUgJE2lSkkyZ6skgRmH5PRG3n-b2Sz3Z9uZley0z2gnKPqY-99aswmDcyAIHSIaoc9o4_La3TtRY35zyTMbbjvwzS8x8b88k0VI5tQiqNfYDJ26PbtUoT0sNMVTEw_g6-K">
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Rekayasa Lunak</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary">3 SKS</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5 truncate">Kelas TI-3B • GKB-203</span>
+<div class="mt-3 space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Capaian Teori</span>
+<span class="text-on-surface font-semibold">60%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[60%]"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-0.5">
+<span class="text-outline">Sprint Proyek</span>
+<span class="text-on-surface font-semibold">30%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[30%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div>
+
+</body></html>
